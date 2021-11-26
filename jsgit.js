@@ -10002,7 +10002,7 @@ function encodePerson(person) {
   return {
     name: person.name,
     email: person.email,
-    date: encodeDate(person.date)
+    date: person.date.toISOString()
   };
 }
 
